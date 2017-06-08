@@ -48,7 +48,12 @@
 								<h2 class="major">Buy</h2>
 								<form name="gform" id="gform" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLSdRtJWoQNS6Dlam1gy42-MD1_pkvUgSoyzViKCN6D_hfnJBYA/formResponse?" target="hidden_iframe" onsubmit="submitted=true;">
 									Crypto:<br>
-									<input type="text" name="entry.1154248355" id="entry.1154248355"><br>
+									<input type="select" name="entry.1154248355" id="entry.1154248355">
+									<select name="Crypto">
+										<option value="BTC">BTC</option>
+										<option value="ETH">ETH</option>
+										<option value="LTC">LTC</option>
+									</select><br>
 									Email:<br>
 									<input type="text" name="entry.1800526123" id="entry.1800526123"><br>
 									Location:<br>
@@ -61,7 +66,7 @@
 								<script type="text/javascript">
 									$('#gform').on('submit', function(e) {
 										$('#gform *').fadeOut(2000);
-										$('#gform').prepend('Your submission has been processed...');
+										$('#gform').prepend('Your order has been placed...');
 										});
 								</script>
 							</article>
