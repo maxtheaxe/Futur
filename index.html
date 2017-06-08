@@ -46,9 +46,24 @@
 						<!-- Intro -->
 							<article id="intro">
 								<h2 class="major">Buy</h2>
-								<span class="image main"><img src="images/pic01.jpg" alt="" /></span>
-								<p>Aenean ornare velit lacus, ac varius enim ullamcorper eu. Proin aliquam facilisis ante interdum congue. Integer mollis, nisl amet convallis, porttitor magna ullamcorper, amet egestas mauris. Ut magna finibus nisi nec lacinia. Nam maximus erat id euismod egestas. By the way, check out my <a href="#work">awesome work</a>.</p>
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus rutrum facilisis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam tristique libero eu nibh porttitor fermentum. Nullam venenatis erat id vehicula viverra. Nunc ultrices eros ut ultricies condimentum. Mauris risus lacus, blandit sit amet venenatis non, bibendum vitae dolor. Nunc lorem mauris, fringilla in aliquam at, euismod in lectus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In non lorem sit amet elit placerat maximus. Pellentesque aliquam maximus risus, vel sed vehicula.</p>
+								<form name="gform" id="gform" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLSdRtJWoQNS6Dlam1gy42-MD1_pkvUgSoyzViKCN6D_hfnJBYA/formResponse?" target="hidden_iframe" onsubmit="submitted=true;">
+									Crypto:<br>
+									<input type="text" name="entry.1154248355" id="entry.1154248355"><br>
+									Email:<br>
+									<input type="text" name="entry.1800526123" id="entry.1800526123"><br>
+									Location:<br>
+									<input type="text" name="entry.754950162" id="entry.754950162"><br>
+									<input type="submit" value="Submit">
+								</form>
+								<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
+								<script src="assets/js/jquery.min.js"></script>
+								<script type="text/javascript">var submitted=false;</script>
+								<script type="text/javascript">
+									$('#gform').on('submit', function(e) {
+										$('#gform *').fadeOut(2000);
+										$('#gform').prepend('Your submission has been processed...');
+										});
+								</script>
 							</article>
 
 						<!-- Work -->
