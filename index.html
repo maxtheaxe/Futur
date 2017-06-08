@@ -69,9 +69,24 @@
 						<!-- Work -->
 							<article id="sell">
 								<h2 class="major">Sell</h2>
-								<span class="image main"><img src="images/pic02.jpg" alt="" /></span>
-								<p>Adipiscing magna sed dolor elit. Praesent eleifend dignissim arcu, at eleifend sapien imperdiet ac. Aliquam erat volutpat. Praesent urna nisi, fringila lorem et vehicula lacinia quam. Integer sollicitudin mauris nec lorem luctus ultrices.</p>
-								<p>Nullam et orci eu lorem consequat tincidunt vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus pharetra. Pellentesque condimentum sem. In efficitur ligula tate urna. Maecenas laoreet massa vel lacinia pellentesque lorem ipsum dolor. Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus amet feugiat tempus.</p>
+								<form name="gform" id="gform" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLSdRtJWoQNS6Dlam1gy42-MD1_pkvUgSoyzViKCN6D_hfnJBYA/formResponse?" target="hidden_iframe" onsubmit="submitted=true;">
+									Cryptocurrency Type:<br>
+									<input type="text" name="entry.1154248355" id="entry.1154248355"><br>
+									Contact Email:<br>
+									<input type="text" name="entry.1800526123" id="entry.1800526123"><br>
+									Meeting Location:<br>
+									<input type="text" name="entry.754950162" id="entry.754950162"><br>
+									<input type="submit" value="Submit">
+								</form>
+								<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
+								<script src="assets/js/jquery.min.js"></script>
+								<script type="text/javascript">var submitted=false;</script>
+								<script type="text/javascript">
+									$('#gform').on('submit', function(e) {
+										$('#gform *').fadeOut(2000);
+										$('#gform').prepend('Your order has been placed...');
+										});
+								</script>
 							</article>
 
 						<!-- About -->
